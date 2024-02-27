@@ -3,12 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 body {
-  /* background-color: #dbe9ff; */
-  background-color: #313131;
   background-color: #414141;
-  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -24,7 +22,6 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 32px;
-  z-index: 1;
   border: 4px solid #212121;
 }
 #timer {
@@ -37,9 +34,6 @@ body {
   margin-top: 50px;
   color: #f0f9ff;
   font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   border-radius: 16px;
 }
 #buttons {
@@ -47,31 +41,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 #buttons button {
   font-size: 1.2rem;
   background-color: #dbe9ff;
   color: #3c98ff;
   border: none;
-  border: 1px solid #313131;
-  border: 1px solid transparent;
-  font-family: "Poppins", sans-serif;
   border-radius: 16px;
   padding: 20px 30px;
   cursor: pointer;
   outline: none;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
 }
 #buttons #start-timer {
   background-color: #3c98ff;
   color: #313131;
 }
 #buttons button:hover {
-  background-color: rgb(210, 77, 40);
   background-color: #3c98ff;
   color: #212121;
-  /* border: 1px solid #212121; */
-  transition: 0.5s ease-in;
+  transition: 0.4s ease-in;
+}
+@media only screen and (max-width: 410px) {
+  #watch-container {
+    width: 75vw;
+    border: 2px solid #212121;
+  }
+}
+#timer {
+  width: 116%;
+  padding: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+#buttons {
+  margin: 40px auto;
+  justify-content: space-between;
+}
+#buttons button {
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
